@@ -24,7 +24,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addArrows">addArrows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#compareNodes">compareNodes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#endHasSpace">endHasSpace</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getHtmlByTei">getHtmlByTei</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTEI">getTEI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#hasWAncestor">hasWAncestor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeArrows">removeArrows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#resetCounter">resetCounter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#saveDataToDB">saveDataToDB</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setPreferredFontFamily">setPreferredFontFamily</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setTEI">setTEI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#startHasSpace">startHasSpace</a></span></li>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addArrows">addArrows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#compareNodes">compareNodes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#endHasSpace">endHasSpace</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getHtmlByTei">getHtmlByTei</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTEI">getTEI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#hasWAncestor">hasWAncestor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeArrows">removeArrows</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#resetCounter">resetCounter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#saveDataToDB">saveDataToDB</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setPreferredFontFamily">setPreferredFontFamily</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setTEI">setTEI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setWceEditor">setWceEditor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#startHasSpace">startHasSpace</a></span></li>
 </nav>
 
 <div id="main">
@@ -79,7 +79,14 @@
 // ones to make optional with default: toolbar, 
 // ones to make optional without default: save_onsavecallback (required is save in toolbar)
 
-function setWceEditor(_id, finishCallback, getWitness, getWitnessLang, options) {
+
+/** Initialises the editor
+
+@param {string} _id - The html id value of the text area to transform into the editor.
+@param {object} options - the optional settings to use when initialising the editor.
+
+*/
+function setWceEditor(_id, options) {
 	if (typeof options === 'undefined') {
 		options = {};
 	}
@@ -90,7 +97,7 @@ function setWceEditor(_id, finishCallback, getWitness, getWitnessLang, options) 
 	}
 	
 	console.log(options);
-	let test = (options.rtl) ? "rtl" : "ltr";
+	let test = (options.witnessLang) ? options.witnessLang : "";
 	console.log(test);
 
 	tinymce.init({
@@ -112,8 +119,8 @@ function setWceEditor(_id, finishCallback, getWitness, getWitnessLang, options) 
 		},
 		directionality : (options.rtl) ? "rtl" : "ltr",
 		language : (options.language) ? (options.language.indexOf('de') == 0 ? "de" : "en") : "en",
-		witness : (getWitness) ? getWitness : "",
-		manuscriptLang : (getWitnessLang) ? getWitnessLang : "",
+		witness : (options.witnessSiglum) ? options.witnessSiglum : "",
+		manuscriptLang : (options.witnessLang) ? options.witnessLang : "",
 		plugins : "pagebreak,save,print,contextmenu,fullscreen,wordcount,autosave,paste,charmap,code,noneditable",
 		contextmenu: 'cut copy paste',
 		charmap : charmap_greek.concat(charmap_latin).concat(charmap_slavistic),
@@ -136,10 +143,10 @@ function setWceEditor(_id, finishCallback, getWitness, getWitnessLang, options) 
 		setup : function(ed) {
 			
 			ed.on('change', wceOnContentsChange);
-			ed.on('init', function(e) {// Once initialized, tell the editor to go fullscreen
+			ed.on('init', function(e) {  // Once initialized, tell the editor to go fullscreen
 				addMenuItems(tinyMCE.activeEditor);
-				if (finishCallback)
-					finishCallback();
+				if (options.finishCallback)
+					options.finishCallback();
 			});
 		}	
 	});
@@ -425,7 +432,7 @@ if (( typeof Range !== "undefined") &amp;&amp; !Range.prototype.createContextual
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Fri Jul 08 2022 20:19:39 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Mon Jul 11 2022 11:03:35 GMT+0000 (Coordinated Universal Time) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
