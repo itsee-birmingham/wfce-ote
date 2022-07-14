@@ -1,0 +1,121 @@
+<!DOCTYPE TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc><titleStmt><title n="075S" type="document" key="075S">A transcription of Galatians in 075S</title><title type="collection" xml:lang="en">The New Testament</title><title type="collection" xml:lang="de">Das Neue Testament</title><title type="work" xml:lang="en">The Epistle to the Galatians</title><title type="short" xml:lang="en">Galatians</title><respStmt><resp>Created by</resp><name type="org">The International Greek New Testament Project</name></respStmt><respStmt><resp when-iso="2020-03-25">Transcribed by</resp><name type="person">Amy Myshrall</name></respStmt><respStmt><resp when-iso="2018-04-18">Transcribed by</resp><name type="person">Joey McCollum</name></respStmt><respStmt><resp when-iso="2020-05-18">Reconciled by</resp><name type="person">Amy Myshrall</name></respStmt><respStmt><resp when-iso="2020-05-27">Proofread by</resp><name type="person">Amy Myshrall</name></respStmt><funder>This transcription was made as part of the CATENA project, which has received funding from the European Research Council (ERC) under the European Union Horizon 2020 research and innovation programme (grant agreement no. 770816).</funder><sponsor><name type="org">The Institute for Textual Scholarship and Electronic Editing</name></sponsor></titleStmt><editionStmt><edition n="1.1">Version 1.1, created on <date when-iso="2020-08-21">21.08.2020</date></edition></editionStmt><publicationStmt><publisher><name type="org">The International Greek New Testament Project (IGNTP)</name></publisher><date when-iso="2020-08-21">21.08.2020</date><availability><p>Attribution 4.0 International (CC BY 4.0) Available for re-use under a creative commons license provided attribution is made to the original creators.</p></availability></publicationStmt><sourceDesc><msDesc><msIdentifier><altIdentifier type="GA"><idno>075S</idno></altIdentifier><altIdentifier type="Liste"><idno>20075</idno></altIdentifier></msIdentifier></msDesc><listWit><witness xml:id="firsthand"/><witness xml:id="corrector"/></listWit></sourceDesc></fileDesc><encodingDesc n="1.4"><projectDesc><p>This transcription was made by the International Greek New Testament Project in its work towards the Editio Critica Maior.</p></projectDesc><editorialDecl><p>This transcription was produced using the online transcription editor developed by the Center for Digital Humanities at the University of Trier as part of the Workspace for Collaborative Editing Project between 2010 and 2013 and made available for use by the Institute for Textual Scholarship and Electronic Editing and the University of Birmingham.</p><p>The XML specifications used are version 1.4 of the IGNTP Guidelines available at <ptr target="http://epapers.bham.ac.uk/1727/"/></p></editorialDecl><variantEncoding method="parallel-segmentation" location="internal"/></encodingDesc></teiHeader><text xml:lang="grc"><body>
+<pb n="154r" type="folio" xml:id="P154r-075S"/>
+<cb n="P154rC1-075S"/>
+<lb n="P154rC1L-075S"/><note type="local" xml:id="BKV-075S-2">This is a supplement to GA 075.</note><div type="book" n="B09"><div type="chapter" n="B09K6"><ab n="B09K6V3"><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="pagetop" n="@P154r-075S"><fw type="quireSig" n="36" rend="right"><w><abbr type="num"><hi rend="overline">λϛ</hi></abbr></w></fw></seg><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="227" rend="right"><abbr type="num"><hi rend="overline">σκζ</hi></abbr></num></seg><w>ει</w><w>γαρ</w><w>δοκει</w><w>τις</w><w>ειναι</w>
+<lb n="P154rC1L-075S"/><w>μηδεν</w><w>ων</w><w>φρεναπατα</w><w>εαυτον</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V4"><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="228" rend="right"><abbr type="num"><hi rend="overline">σκη</hi></abbr></num></seg><w>το</w><w>δε</w><w>εργον</w><w>εαυτου</w><w>δοκιμαζετω</w><w>εκαστος</w><pc>,</pc>
+<lb n="P154rC1L-075S"/><w>και</w><w>τοτε</w><w>εις</w><w>εαυτον</w><w>μονον</w><w>το</w><w>καυχημα</w><w>εξει</w><w>και</w><w><ex>ου</ex>
+<lb n="P154rC1L-075S" break="no"/>κ</w><w>εις</w><w>τον</w><w>ετερον</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V5"><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="229" rend="right"><abbr type="num"><hi rend="overline">σκθ</hi></abbr></num></seg><w>εκαστος</w><w>γαρ</w><w>το</w><w>ιδιον</w><w>φορτιον</w>
+<lb n="P154rC1L-075S"/><w>βαστασει</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V6"><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="230" rend="right"><abbr type="num"><hi rend="overline">σλ</hi></abbr></num></seg><w>κοινωνειτω</w><w>δε</w><w>ο</w>
+<lb n="P154rC1L-075S"/><w>κατηχουμενος</w><w>τον</w><w>λογον</w><w>τω</w><w>κατηχουντι</w><w>εν</w><w>πασιν</w><w>αγαθοις</w><pc>:</pc>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/></ab><ab n="B09K6V7"><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="231" rend="right"><abbr type="num"><hi rend="overline">σλα</hi></abbr></num></seg><w>μη</w><w>πλανασθε</w><pc>·</pc><w><abbr type="nomSac"><hi rend="overline">θς</hi></abbr></w><w>ου</w><w>μυκτηριζεται</w><pc>·</pc><w>ο</w><w>γαρ</w><w>εαν</w><w>σπειρη</w><w><abbr type="nomSac"><hi rend="overline">ανος</hi></abbr></w>
+<lb n="P154rC1L-075S"/><w>τουτο</w><w>και</w><w>θερισει</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V8"><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="232" rend="right"><abbr type="num"><hi rend="overline">σλβ</hi></abbr></num></seg><w>οτι</w><w>ο</w><w>σπειρων</w><w>εις</w><w>τ<ex>ην</ex></w>
+<lb n="P154rC1L-075S"/><w>σαρκα</w><w>αυτου</w><pc>,</pc><w>εκ</w><w>της</w><w>σαρκος</w><w>θερισει</w><w>φθοραν</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="233" rend="right"><abbr type="num"><hi rend="overline">σλγ</hi></abbr></num></seg><w>ο</w><w>δε</w><w>σπειρων</w><w>εις</w><w>το</w><w><abbr type="nomSac"><hi rend="overline">πνα</hi></abbr></w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="234" rend="right"><abbr type="num"><hi rend="overline">σλδ</hi></abbr></num></seg><w>εκ</w><w>του</w><w><abbr type="nomSac"><hi rend="overline">πνς</hi></abbr></w><w>θερι
+<lb n="P154rC1L-075S" break="no"/>σει</w><w>ζωην</w><w>αιωνιον</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V9"><seg type="margin" subtype="lineleft" n="@P154rC1L-075S"><num type="chapNum" n="235" rend="right"><abbr type="num"><hi rend="overline">σλε</hi></abbr></num></seg><w>το</w><w>δε</w><w>καλον</w><w>ποιουντες</w><pc>·</pc>
+<pb n="154v" type="folio" xml:id="P154v-075S"/>
+<cb n="P154vC1-075S"/>
+<lb n="P154vC1L-075S"/><w>μη</w><w>εκκακωμεν</w><pc>·</pc><w>καιρω</w><w>γαρ</w><w>ιδιω</w><w>θερισομεν</w><w>μη</w><w>εκλυο
+<lb n="P154vC1L-075S" break="no"/>μενοι</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154vC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V10"><seg type="margin" subtype="lineleft" n="@P154vC1L-075S"><num type="chapNum" n="236" rend="right"><abbr type="num"><hi rend="overline">σλϛ</hi></abbr></num></seg><w>αρα</w><w>ουν</w><w>ως</w><w>καιρον</w><w>εχομεν</w><w>εργαζομεθα</w>
+<lb n="P154vC1L-075S"/><w>το</w><w>αγαθον</w><w>προς</w><w>παντας</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb n="P154vC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P154vC1L-075S"><num type="chapNum" n="237" rend="right"><abbr type="num"><hi rend="overline">σλζ</hi></abbr></num></seg><w>μαλιστα</w>
+<lb n="P154vC1L-075S"/><w>δε</w><w>προς</w><w>τους</w><w>οικειους</w><w>της</w><w>πιστεως</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154vC1L-075S"/></ab><ab n="B09K6V11"><seg type="margin" subtype="pageleft" n="@P154v-075S"><fw type="lectTitle" rend="center"><w>κυ<ex>ριακη</ex></w><w><abbr type="num"><hi rend="overline">κβ</hi></abbr></w></fw></seg><seg type="margin" subtype="lineleft" n="@P154vC1L-075S"><num type="chapNum" n="238" rend="right"><abbr type="num"><hi rend="overline">σλη</hi></abbr></num></seg><w>ιδετε</w><w>πηλικοις</w><w>υμιν</w><w>γραμμασιν</w><w>εγραψα</w><w>τη</w><w>εμη</w><w>χει
+<lb n="P154vC1L-075S" break="no"/>ρι</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154vC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V12"><seg type="margin" subtype="lineleft" n="@P154vC1L-075S"><num type="chapNum" n="239" rend="right"><abbr type="num"><hi rend="overline">σλθ</hi></abbr></num></seg><w>οσοι</w><w>θελ<ex>ου</ex>σιν</w><w>ευπροσωπησαι</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154vC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P154vC1L-075S"><num type="chapNum" n="240" rend="right"><abbr type="num"><hi rend="overline">σμ</hi></abbr></num></seg><w>εν</w><w>σαρκι</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb n="P154vC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P154vC1L-075S"><num type="chapNum" n="241" rend="right"><abbr type="num"><hi rend="overline">σμα</hi></abbr></num></seg><w>ουτοι</w><w>αναγκαζουσιν</w><w>υμας</w><w>περιτεμνεσθαι</w>
+<lb n="P154vC1L-075S"/><w>μονον</w><pc>·</pc><w>ινα</w><w>μη</w><w>τω</w><w><abbr type="nomSac"><hi rend="overline">στρω</hi></abbr></w><w>του</w><w><abbr type="nomSac"><hi rend="overline">χυ</hi></abbr></w><w>διωκονται</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P154vC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V13"><seg type="margin" subtype="lineleft" n="@P154vC1L-075S"><num type="chapNum" n="242" rend="right"><abbr type="num"><hi rend="overline">σμβ</hi></abbr></num></seg><w>ουδε</w><w>γαρ</w><w>οι</w><w>περιτεμνομενοι</w><w>αυ
+<lb n="P154vC1L-075S" break="no"/>τοι</w><w>νομον</w><w>φυλασσουσιν</w><pc>·</pc><w>αλλα</w><w>θελουσιν</w><w>υμας</w><w>περιτε
+<lb n="P154vC1L-075S" break="no"/>μνεσθ<ex>αι</ex></w><w>ινα</w><w>εν</w><w>τη</w><w>υμετερα</w><w>σαρκι</w><app><rdg type="orig" hand="firsthand"><w>καυχησονται</w></rdg><rdg type="corr" hand="corrector"><seg type="line" subtype="overwritten" n="@P154vC1L-075S"><w>καυχησωνται</w></seg></rdg></app><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<pb n="155r" type="folio" xml:id="P155r-075S"/>
+<cb n="P155rC1-075S"/>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155rC1L-075S"/></ab><ab n="B09K6V14"><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="243" rend="right"><abbr type="num"><hi rend="overline">σμγ</hi></abbr></num></seg><w>εμοι</w><w>δε</w><w>μη</w><w>γενοιτο</w><w>καυχασθαι</w><w>ει</w><w>μη</w><w>εν</w><w>τω</w><w><abbr type="nomSac"><hi rend="overline">στρω</hi></abbr></w><w>του</w><w><abbr type="nomSac"><hi rend="overline">κυ</hi></abbr></w>
+<lb n="P155rC1L-075S"/><w>ημων</w><w><abbr type="nomSac"><hi rend="overline">ιυ</hi></abbr></w><w><abbr type="nomSac"><hi rend="overline">χυ</hi></abbr></w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="244" rend="right"><abbr type="num"><hi rend="overline">σμδ</hi></abbr></num></seg><w>δι</w><w>ου</w><w>εμοι</w><w>κοσμος</w><w>εσταυρωται</w><w>καγω</w><w>τω</w><w>κοσ
+<lb n="P155rC1L-075S" break="no"/>μω</w><pc>·</pc></ab><ab n="B09K6V15"><w>ουτε</w><w>γαρ</w><w>περιτομη</w><w>τι</w><w>ισχυει</w><pc>,</pc><w>ουτε</w><w>ακροβυστια</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="245" rend="right"><abbr type="num"><hi rend="overline">σμε</hi></abbr></num></seg><w>αλλα</w><w>καινη</w><w>κτισ<ex>ις</ex></w><pc>·</pc>
+<lb n="P155rC1L-075S"/></ab><ab n="B09K6V16"><w>και</w><w>οσοι</w><w>τω</w><w>κανονι</w><w>τουτω</w><w>στοιχησωσιν</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="246" rend="right"><abbr type="num"><hi rend="overline">σμϛ</hi></abbr></num></seg><w>ειρηνη</w><w>ε
+<lb n="P155rC1L-075S" break="no"/>π</w><w>αυτους</w><w>και</w><w>ελεος</w><w>και</w><w>επι</w><w>τον</w><w><abbr type="nomSac"><hi rend="overline">ιηλ</hi></abbr></w><w>του</w><w><abbr type="nomSac"><hi rend="overline">θυ</hi></abbr></w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V17"><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="247" rend="right"><abbr type="num"><hi rend="overline">σμζ</hi></abbr></num></seg><w>του</w><w>λοιπ<ex>ου</ex></w>
+<lb n="P155rC1L-075S"/><w>κοπους</w><w>μοι</w><w>μηδεις</w><w>παρεχετω</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="248" rend="right"><abbr type="num"><hi rend="overline">σμη</hi></abbr></num></seg><w>εγω</w><w>γαρ</w><w>τα</w><w>στιγματ<ex>α</ex></w><w>του</w><w><abbr type="nomSac"><hi rend="overline">χυ</hi></abbr></w><w>εν</w>
+<lb n="P155rC1L-075S"/><w>τω</w><w>σωματι</w><w>μου</w><w>βασταζω</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb n="P155rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note></ab><ab n="B09K6V18"><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="249" rend="right"><abbr type="num"><hi rend="overline">σμθ</hi></abbr></num></seg><w>η</w><w>χαρις</w><w>του</w><w><abbr type="nomSac"><hi rend="overline">κυ</hi></abbr></w>
+<lb n="P155rC1L-075S"/><w>ημων</w><w><abbr type="nomSac"><hi rend="overline">ιυ</hi></abbr></w><w><abbr type="nomSac"><hi rend="overline">χυ</hi></abbr></w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155rC1L-075S"/><note type="commentary">Untranscribed commentary text within the line</note><seg type="margin" subtype="lineleft" n="@P155rC1L-075S"><num type="chapNum" n="250" rend="right"><abbr type="num"><hi rend="overline">σν</hi></abbr></num></seg><w>με
+<pb n="155v" type="folio" xml:id="P155v-075S" break="no"/>
+<cb n="P155vC1-075S"/>
+<lb n="P155vC1L-075S"/>τα</w><w>του</w><w><abbr type="nomSac"><hi rend="overline">πνς</hi></abbr></w><w>υμων</w><w>αδελφοι</w><w>αμην</w><pc>:</pc><note type="commentary">Untranscribed commentary text within the line</note>
+<lb/><note type="commentary">One line of untranscribed commentary text</note>
+<lb n="P155vC1L-075S"/></ab></div><div type="explicit" n="B09explicit"><ab n="B09KSubscriptioV0"><w>προς</w><w>γαλατ<ex>ας</ex></w><w>εγραφη</w><w>απο</w><w>ρωμης</w><seg type="line" subtype="here" n="@P155vC1L-075S"><num type="stichoi" rend="right">στιχων<abbr type="num"><hi rend="overline">σϙγ</hi></abbr></num></seg></ab></div></div></body></text></TEI>
