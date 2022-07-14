@@ -1,0 +1,114 @@
+<!DOCTYPE TEI []>
+<TEI xml:id="GA0174" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A transcription of Galatians in 0174</title>
+                <title type="document" n="0174" key="20174">GA 0174</title>
+                <title type="collection" level="s" xml:lang="en">The New Testament</title>
+                <title type="collection" level="s" xml:lang="de">Das Neue Testament</title>
+                <title type="work" level="m" n="09" xml:lang="en">The Epistle to the
+                    Galatians</title>
+                <title type="short" level="m" n="09" xml:lang="en">Galatians</title>
+                <respStmt>
+                    <resp>Created by</resp>
+                    <name type="org">The International Greek New Testament Project</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Transcribed by</resp>
+                    <name type="person">Hugh Houghton</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Proofread by</resp>
+                    <name type="person">Hugh Houghton</name>
+                </respStmt>
+                <sponsor><name type="org">The Institute for Textual Scholarship and Electronic
+                        Editing</name></sponsor>
+            </titleStmt>
+            <editionStmt>
+                <edition n="1.0">Version 1.0, created on <date>13.10.2020</date></edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher><name type="org">The Institute for Textual Scholarship and Electronic
+                        Editing</name><name type="org">University of Birmingham</name></publisher>
+                <date>13.10.2020</date>
+                <availability>
+                    <p>Licensed under a Creative Commons Attribution 4.0 International License (CC
+                        BY 4.0): available for re-use provided attribution is made to the original
+                        creators (the IGNTP and any named participants) and an indication is given
+                        of any changes made. See further <ptr
+                            target="https://creativecommons.org/licenses/by/4.0/"/>.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <altIdentifier type="GA">
+                            <idno>0174</idno>
+                        </altIdentifier>
+                        <altIdentifier type="Liste">
+                            <idno>20174</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc n="1.4">
+            <projectDesc>
+                <p>This transcription was made by the International Greek New Testament Project in
+                    its work towards the Editio Critica Maior.</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>This transcription was produced directly in the Oxygen XML editor. As of October
+                    2020, the manuscript is recorded as lost in the PSI onIine archive <ptr
+                        target="http://www.psi-online.it/documents/psi;2;118"/>. This file is a
+                    transcription of the editio princeps found in G. Vitelli, Papiri Greci e Latini,
+                    Volume Secondo. Florence: Ariani, 1913, p. 10 (available at <ptr
+                        target="https://archive.org/details/papirigrecielati02soci/page/10/mode/2up"
+                    />.</p>
+                <p>The XML specifications used are version 1.4 of the IGNTP Guidelines available at
+                        <ptr target="http://epapers.bham.ac.uk/1727/"/></p>
+            </editorialDecl>
+            <variantEncoding method="parallel-segmentation" location="internal"/>
+        </encodingDesc>
+    </teiHeader>
+    <text xml:lang="grc">
+        <body>
+            <pb n="1r" type="folio" xml:id="P1r-0174"/>
+            <cb n="P1rC1-0174"/>
+            <lb n="P1rC1L-0174"/>
+            <div type="book" n="B09">
+                <div type="chapter" n="B09K2">
+                    <ab n="B09K2V5"><gap reason="lacuna" unit="book" extent="part"/><gap
+                            reason="lacuna" unit="chapter" extent="part"/><gap reason="lacuna"
+                            unit="verse" extent="part"/><w><supplied source="editio_princeps"
+                                reason="lacuna">δ</supplied><unclear reason="damage to page"
+                                >ια</unclear>μιν<unclear reason="damage to page"
+                                >η</unclear></w><w><unclear reason="damage to page"
+                                >π</unclear>ρ<supplied source="editio_princeps" reason="lacuna"
+                                >ος</supplied></w><w><supplied source="editio_princeps"
+                                reason="lacuna">υμας</supplied></w></ab>
+                    <ab n="B09K2V6"><w><supplied source="editio_princeps" reason="lacuna"
+                                >απο</supplied></w>
+                        <lb n="P1rC1L-0174"/><w><supplied source="editio_princeps" reason="lacuna"
+                                >δε</supplied></w><w>των</w><w>δοκουν<supplied
+                                    source="editio_princeps" reason="lacuna">των</supplied></w>
+                        <lb n="P1rC1L-0174"/><w><supplied source="editio_princeps" reason="lacuna">ει</supplied>ναι</w><w>τι</w><w>ο<unclear reason="damage to page">ποιοι</unclear></w><w><unclear reason="damage to page">ποτε</unclear></w>
+                        <lb n="P1rC1L-0174"/><w>ησαν</w><w>ουδεν</w><w>μοι</w><w><unclear reason="damage to page"
+                            >δ</unclear><supplied source="editio_princeps" reason="lacuna"
+                                >ιαφερει</supplied></w>
+                            <lb n="P1rC1L-0174"/><w><unclear reason="damage to page"
+                                >ο</unclear></w><w><abbr type="nomSac"><hi rend="overline"
+                                    ><unclear reason="damage to page"
+                                        >θ</unclear>ς</hi></abbr></w><w>ανθρωπου</w><w>π<supplied source="editio_princeps" reason="lacuna"
+                            >ροσωπον</supplied></w>
+                            <lb n="P1rC1L-0174"/><w>ου</w><w>λαμ<supplied source="editio_princeps" reason="lacuna"
+                                >βα</supplied><unclear reason="damage to page"
+                                    >νε</unclear><supplied source="editio_princeps" reason="lacuna"
+                                        >ι</supplied></w>
+                   <gap reason="witnessEnd"/></ab>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
