@@ -1,3 +1,4 @@
+const pti = require('puppeteer-to-istanbul');
 const puppeteer = require('puppeteer');
 const path = require('path');
 
@@ -16,6 +17,7 @@ const xmlTail = '</body></text></TEI>';
 jest.setTimeout(5000000);
 
 beforeAll(async () => {
+  
   browser = await puppeteer.launch({
     // for local testing
     // headless: false,
@@ -27,9 +29,13 @@ beforeAll(async () => {
     slowMo: 80,
     args: ['--disable-web-security']
   });
+  page = await browser.newPage();
+  // await page.coverage.startJSCoverage();
 });
 
 afterAll(async () => {
+  // const [jsCoverage] = await Promise.all([page.coverage.stopJSCoverage()]);
+  // pti.write([...jsCoverage], { includeHostname: true , storagePath: './.nyc_output' });
   await browser.close();
 });
 
@@ -37,7 +43,10 @@ beforeEach(async () => {
   let frameHandle;
   jest.setTimeout(5000000);
   page = await browser.newPage();
-  // await page.goto(`file:${path.join(__dirname, '..', 'wce-ote', 'index.html')}`);
+  // make sure we reload the page and don't just get the changes made warning from the browser
+  // await page.evaluate(() => {
+  //   window.onbeforeunload = null;
+  // });
   await page.goto(`file:${path.join(__dirname, 'test_index_page.html')}`);
   await page.evaluate(`setWceEditor('wce_editor', {})`);
   page.waitForSelector("#wce_editor_ifr");
@@ -46,11 +55,11 @@ beforeEach(async () => {
     frameHandle = await page.$("iframe[id='wce_editor_ifr']");
   }
   frame = await frameHandle.contentFrame();
-
 });
 
-describe('testing editor appearance', () => {
 
+
+describe('testing editor appearance', () => {
 
   test('check correct editing buttons appear', async () => {
     let BButton, CButton, DButton, OButton, AButton, MButton, NButton, PButton, VButton;
