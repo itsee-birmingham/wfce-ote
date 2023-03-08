@@ -140,7 +140,7 @@ function getHtmlByTei(inputString, clientOptions) {
  */
 	var getHtmlString = function() {
 		var $oldDoc = loadXMLString(inputString);
-		if (!$oldDoc){
+		if(!$oldDoc){
 		 	//return '';
 		}
 		var $oldRoot = $oldDoc.documentElement;
@@ -149,13 +149,13 @@ function getHtmlByTei(inputString, clientOptions) {
 		if ($oldRoot &amp;&amp; $oldRoot.firstChild){
 			var first=$oldRoot.firstChild;
 			var error;
-			if (first.nodeType==3 &amp;&amp; $oldRoot.nodeName &amp;&amp; $oldRoot.nodeName.match(/parsererror/i)) {
+			if(first.nodeType==3 &amp;&amp; $oldRoot.nodeName &amp;&amp; $oldRoot.nodeName.match(/parsererror/i)){
 				error=first.textContent;
-			} else if (first.nodeName &amp;&amp; first.nodeName.match(/parsererror/i)){
+			}else if(first.nodeName &amp;&amp; first.nodeName.match(/parsererror/i)){
 				error=first.textContent;
 			}
 
-			if (error) {
+			if(error){
 				Fehlerbehandlung(' XML parser '+ error);
 			}
 		}
@@ -177,9 +177,9 @@ function getHtmlByTei(inputString, clientOptions) {
 		addSpaceBeforeVerse($newRoot);
 		// DOM to String
 		var str = xml2String($newRoot);
-		if (!str) {
+		if (!str)
 			return '';
-		}
+
 		return str;
 	};
 
@@ -389,68 +389,38 @@ function getHtmlByTei(inputString, clientOptions) {
 	/*
 	 * read all nodes of $node and change and add
 	 */
-	var readAllChildrenOfTeiNode = function($htmlParent, $teiNode, verbose, internal) {
-		if (internal) {
-			console.log('internal call called')
-		}
-		if (verbose) {
-			console.log($htmlParent)
-			console.log($teiNode)
-			console.log($teiNode.nodeType)
-		}
+	var readAllChildrenOfTeiNode = function($htmlParent, $teiNode) {
 		if (!$teiNode) {
 			return;
 		}
 		if ($teiNode.nodeType == 3) {
-			if (verbose) {
-				console.log('if 1')
-			}
 			Tei2Html_TEXT($htmlParent, $teiNode);
 		} else if ($teiNode.nodeType == 1 || $teiNode.nodeType == 11) {
 			//add GroupId to pb, cb lb
 			addGroupID($teiNode);
 
-			if ($teiNode.nodeName) {
+			if ($teiNode.nodeName)
 				var $newParent = getHtmlNodeByTeiNode($htmlParent, $teiNode);
-			}
-			if (verbose) {
-				console.log($htmlParent)
-				console.log($teiNode)
-				console.log($newParent)
-			}
+
 			// stop to read $teiNode
 			if (!$newParent) {
-				if (verbose) {
-					console.log('if 2')
-				}
 				// make sure that a *single* gap is followed by a space
-				if ($teiNode.nodeName == 'gap' &amp;&amp; $teiNode.nextSibling &amp;&amp; $teiNode.nextSibling.nodeName !== 'unclear' &amp;&amp; $teiNode.nextSibling.nodeValue == null) {
-					if (verbose) {
-						console.log('if 2a')
-					}
+				if ($teiNode.nodeName == 'gap' &amp;&amp; $teiNode.nextSibling &amp;&amp; $teiNode.nextSibling.nodeName !== 'unclear' &amp;&amp; $teiNode.nextSibling.nodeValue == null)
 					nodeAddText($htmlParent, ' ');
-				}
 				return;
 			}
-			
-			if ($newParent &amp;&amp; $newParent.nodeName.toLowerCase() == 'span' &amp;&amp; !$newParent.firstChild) {
+
+			if ($newParent &amp;&amp; $newParent.nodeName.toLowerCase() == 'span' &amp;&amp; !$newParent.firstChild){
 				var needAddFormat=true;
 			}
 
 			var childList = $teiNode.childNodes;
-			if (verbose) {
-				console.log('****')
-				console.log(childList)
-			}
 			for (var i = 0, $c, l = childList.length; i &lt; l; i++) {
 				$c = childList[i];
-				if (verbose) {
-					console.log($c)
-				}
 				if (!$c) {
 					continue;
 				} else {
-					readAllChildrenOfTeiNode($newParent, $c, verbose, true);
+					readAllChildrenOfTeiNode($newParent, $c);
 				}
 			}
 
@@ -875,9 +845,14 @@ function getHtmlByTei(inputString, clientOptions) {
 				wceAttr += '&amp;unit_other=&amp;unit=';
 			if (teiNodeName == 'supplied') {
 				wceAttr += '&amp;mark_as_supplied=supplied';
-				var origText = '&lt;TEMP>'+$($teiNode).html().replace(/ xmlns="[^"]*"/g, '').replace(/&lt;[/]?tempspace>/g, '')+'&lt;/TEMP>';
-				var htmlOrigText = getHtmlByTei(origText).htmlString.replace(/&lt;[/]?TEMP>/g, '');
-				$newNode.setAttribute('wce_orig', encodeURIComponent(htmlOrigText));
+				$newNode.setAttribute('wce_orig', $teiNode.firstChild ? $teiNode.firstChild.nodeValue : '');
+				// // This .firstChild logic fails when the content is more than a character string with no whitespace.
+				// // var origText = $teiNode.firstChild ? $teiNode.firstChild.nodeValue : '';
+				// // This logic comes closer to the original
+				// var origText = '&lt;TEMP>'+$($teiNode).html().replace(/ xmlns="[^"]*"/g, '').replace(/&lt;[/]?tempspace>/g, '')+'&lt;/TEMP>';
+				// var htmlOrigText = getHtmlByTei(origText).htmlString.replace(/&lt;[/]?TEMP>/g, '');
+				// $newNode.setAttribute('wce_orig', encodeURIComponent(htmlOrigText));
+				console.log($newNode.getAttribute('wce_orig'))
 				// get the content and save it as original
 				// for an empty source we have to add the "none" value
 				if (!$teiNode.getAttribute('source'))
@@ -1606,7 +1581,6 @@ function getHtmlByTei(inputString, clientOptions) {
 	var Tei2Html_app = function($htmlParent, $teiNode) {
 		// &lt;span class="corr" wce_orig="..."
 		var $newNode = $newDoc.createElement('span');
-		console.log($teiNode)
 		//$newNode.setAttribute('class', 'corr');
 
 		// &lt;rdg type="orig" hand="firsthand" />
@@ -1617,19 +1591,16 @@ function getHtmlByTei(inputString, clientOptions) {
 		var origText = '';
 		var rdgAttr;
 		var $origRdg = $newDoc.createElement('t');
-		console.log($origRdg)
 		var utvf = '';
 		var utv = '';
-		console.log(rdgs[0].innerHTML)
+
 		var collection = rdgs[0].childNodes;
-		console.log(collection)
 		for (var i = 0, cl, l = collection.length; i &lt; l; i++) {
 			cl=collection[i];
-			console.log(cl)
 			if(!cl){
 				break;
 			}
-			readAllChildrenOfTeiNode($origRdg, collection[i], true);
+			readAllChildrenOfTeiNode($origRdg, collection[i]);
 		}
 
 		//remove textNode with space ' '. It come from function readAllChildrenOfTeiNode::nodeAddText($htmlParent, ' ');
@@ -1637,21 +1608,18 @@ function getHtmlByTei(inputString, clientOptions) {
 		if(oLast &amp;&amp; oLast.nodeType==3 &amp;&amp; oLast.nodeValue==' '){
 			$origRdg.removeChild(oLast);
 		}
-		console.log($origRdg)
 		var _oText=xml2String($origRdg);
-		console.log(_oText);
 		if(_oText &amp;&amp; _oText.length>6){
 			_oText=_oText.substring(3,_oText.length-4);
 			origText += _oText;
 		}
 		origText = origText.trim();
 
-		if (origText === '') {
+		if (origText === '')
 			origText = 'OMISSION';
-		}
-		if (origText === 'OMISSION') { //blank first hand
+		if (origText === 'OMISSION') //blank first hand
 			$newNode.setAttribute('class', 'corr_blank_firsthand');
-		} else {
+		else {
 			$newNode.setAttribute('class', 'corr');
 			$newNode.setAttribute('wce_orig', encodeURIComponent(origText));
 		}
@@ -1696,12 +1664,10 @@ function getHtmlByTei(inputString, clientOptions) {
 			}
 
 			wceAttr += '&amp;reading=' + typeValue;
-			if (origText != 'OMISSION') {
-				console.log(origText)
+			if (origText != 'OMISSION')
 				wceAttr += '&amp;original_firsthand_reading=' + encodeURIComponent(origText);
-			} else {
+			else
 				wceAttr += '&amp;original_firsthand_reading=&amp;blank_firsthand=on';
-			}
 
 			wceAttr += '&amp;common_firsthand_partial=';
 			if (deletionValue) {
@@ -4033,7 +3999,7 @@ var removeSpaceAfterLb=function ($node){
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Wed Jan 04 2023 14:22:03 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Wed Mar 08 2023 16:20:55 GMT+0000 (Coordinated Universal Time) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
