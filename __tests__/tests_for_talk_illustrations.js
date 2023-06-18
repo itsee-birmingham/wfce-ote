@@ -126,4 +126,63 @@ describe('testing unclear text functions', () => {
 
   }, 200000);
 
+  test('test capitals can be edited and deleted if setTEI is used', async () => {
+    // await frame.type('body#tinymce', 'Initial capital');
+    const data = xmlHead + '<w><hi rend="cap" height="3">I</hi>nitial</w><w>capital</w>' + xmlTail;
+    await page.evaluate(`setTEI('${data}');`);
+
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.down('Shift');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.up('Shift');
+
+    // open O menu
+    await page.click('button#mceu_13-open');
+    // open abbreviation menu
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('Enter');
+
+    const menuFrameHandle = await page.$('div[id="mceu_41"] > div > div > iframe');
+    const menuFrame = await menuFrameHandle.contentFrame();
+    // test that the height is prepopulated with the correct default value
+    expect(await menuFrame.$eval('#capitals_height', el => el.value)).toBe('3');
+
+    // insert and check the data
+    await menuFrame.click('input#insert');
+    await page.waitForSelector('div[id="mceu_41"]', { hidden: true });
+
+    const htmlData = await page.evaluate(`getData()`);
+    expect(htmlData).toBe('<span class="formatting_capitals" wce_orig="I" wce="__t=formatting_capitals&amp;__n=&amp;capitals_height=3"><span class="format_start mceNonEditable">‹</span>I<span class="format_end mceNonEditable">›</span></span>nitial capital');
+    const xmlData = await page.evaluate(`getTEI()`);
+    expect(xmlData).toBe(xmlHead + '<w><hi rend="cap" height="3">I</hi>nitial</w><w>capital</w>' + xmlTail);
+
+    // test that the capitals can be deleted
+    // the letter will still be highlighted
+    // open O menu
+    await page.click('button#mceu_13-open');
+    // open abbreviation menu
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowRight');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('ArrowDown');
+    await page.keyboard.press('Enter');
+
+    const xmlData3 = await page.evaluate(`getTEI()`);
+    expect(xmlData3).toBe(xmlHead + '<w>Initial</w><w>capital</w>' + xmlTail);
+  }, 200000);
+
 });
