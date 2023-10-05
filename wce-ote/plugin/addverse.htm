@@ -274,6 +274,12 @@
             return;
         } else if ($('#insertBookRadio').is(':checked')) {
             var newBookNr = $('#insertBookNumber').val().trim();
+
+            // OSIS setting required
+            // code needed is below, nothing needed for default
+            //// newBookNr = newBookNr.replace(/\D/g, '');
+            // OSIS setting end
+
             if (newBookNr != '') {
                 ed.insertContent('<span class="book_number mceNonEditable" wce="__t=book_number" id="' + ed.dom.uniqueId('book') + '"> ' + newBookNr + '</span> ');
             }

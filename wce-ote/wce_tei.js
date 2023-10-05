@@ -664,11 +664,17 @@ function getHtmlByTei(inputString, clientOptions) {
 			$newNode.setAttribute('class', 'book_number mceNonEditable');
 			$newNode.setAttribute('wce', '__t=book_number');
 			$newNode.setAttribute('id', ++gid);
+
+
+			// OSIS setting required
 			var $booknumber = $teiNode.getAttribute('n');
 			// legacy support
 			if ($booknumber.match(/B\d+/)) {
 				$booknumber = clientOptions.getBookNameFromBKV($booknumber);
 			}
+			// OSIS setting end
+
+
 			nodeAddText($newNode, $booknumber);
 		} else if (divType == 'chapter') {
 			var $newNode = $newDoc.createElement('span');
@@ -676,6 +682,9 @@ function getHtmlByTei(inputString, clientOptions) {
 			$newNode.setAttribute('wce', '__t=chapter_number');
 			$newNode.setAttribute('id', ++gid);
 			var nValue = $teiNode.getAttribute('n');
+
+
+			// OSIS setting required
 			if (nValue && nValue != '') {
 				// legacy support (ingest only)
 				if (nValue.indexOf('.') == -1) {
@@ -690,14 +699,23 @@ function getHtmlByTei(inputString, clientOptions) {
 					nodeAddText($newNode, g_chapterNumber);
 				}
 			}
+			// OSIS setting end
+
+
 		} else { //incipit or explicit
 			var $newNode = $newDoc.createElement('span');
 			$newNode.setAttribute('class', 'chapter_number mceNonEditable');
 			$newNode.setAttribute('wce', '__t=chapter_number');
+
+
+			// OSIS setting required
 			if ($teiNode.getAttribute("type") === "inscriptio" || $teiNode.getAttribute("type") === "incipit")
 				nodeAddText($newNode, "Inscriptio");
 			else if ($teiNode.getAttribute("type") === "subscriptio" || $teiNode.getAttribute("type") === "explicit")
 				nodeAddText($newNode, "Subscriptio");
+			// OSIS setting end
+
+
 		}
 		addFormatElement($newNode);
 		var pre=$htmlParent.previousSibling;
@@ -716,6 +734,9 @@ function getHtmlByTei(inputString, clientOptions) {
 		$newNode.setAttribute('class', 'verse_number mceNonEditable');
 		var nValue = $teiNode.getAttribute('n');
 		if (nValue && nValue != '') {
+
+
+			// OSIS setting required
 			// legacy support
 			if (nValue.indexOf('.') == -1) {
 				var nValueArray = nValue.split('V');
@@ -733,6 +754,9 @@ function getHtmlByTei(inputString, clientOptions) {
 				g_verseNumber = nValueArray[2];
 				nodeAddText($newNode, g_verseNumber);
 			}
+			// OSIS setting end
+
+
 		}
 		var partValue = $teiNode.getAttribute('part');
 		if (partValue && (partValue === 'F' || partValue === 'M')){
@@ -2544,6 +2568,15 @@ function getTeiByHtml(inputString, clientOptions) {
 
 		// If there is no special <div type="book"> element, the passed number from the Workspace is used.
 		// We check, if it is in the correct format.
+		// if (g_bookNumber.length == 1) {// add "0"
+		// 	g_bookNumber = '0' + g_bookNumber;
+		// }
+		// OSIS setting required
+		// the code needed for legacy is above
+		// no alternative needed for default OSIS stuff
+		// OSIS setting end
+
+
 		wceAttrValue = $htmlNode.getAttribute('wce');
 		if (!wceAttrValue) {
 			if ($($htmlNode).hasClass('verse_number')) {
@@ -2576,7 +2609,12 @@ function getTeiByHtml(inputString, clientOptions) {
 					g_verseNumber = g_verseNumber.substring(0, cont_index);
 				g_verseNumber = $.trim(g_verseNumber);
 				g_verseNode = $newDoc.createElement('ab');
+
+
+				// OSIS setting required
 				g_verseNode.setAttribute('n', g_bookNumber + '.' + g_chapterNumber + '.' + g_verseNumber);
+				// OSIS setting end
+
 
 				if (partial_index > -1){// node contains information about partial
 					g_verseNode.setAttribute('part', wceAttrValue.substring(partial_index + 8, partial_index + 9));
@@ -2588,9 +2626,16 @@ function getTeiByHtml(inputString, clientOptions) {
 				g_currentParentNode = g_verseNode;
 			} else { //empty verse or inscriptio/subscriptio
 				g_verseNode = $newDoc.createElement('ab');
+
+
+				// OSIS setting required
+				// legacy needs nothing, default needs this
 				if (g_chapterNumber === 'Inscriptio' || g_chapterNumber === 'Subscriptio') {
 					g_verseNode.setAttribute('n', g_bookNumber + '.' + g_chapterNumber.toLowerCase());
 				}
+				// OSIS setting end
+
+
 				if (partial_index > -1){// node contains information about partial
 					g_verseNode.setAttribute('part', wceAttrValue.substring(partial_index + 8, partial_index + 9));
 				}
@@ -2615,7 +2660,26 @@ function getTeiByHtml(inputString, clientOptions) {
 				g_chapterNumber = textNode.nodeValue;
 				g_chapterNumber = $.trim(g_chapterNumber);
 					old_chapterNumber = g_chapterNumber;
+
+					// OSIS setting required
+					// nothing needed for default code for legacy below
+					//Cat commented this out while working on new referencing - no longer needed #15
+					// g_chapterNode = $newDoc.createElement('div');
+					// if (g_chapterNumber === 'Inscriptio') {
+					// 	g_chapterNode.setAttribute('type', 'incipit');
+					// 	g_chapterNode.setAttribute('n', 'B' + g_bookNumber + 'incipit');
+					// } else if (g_chapterNumber === 'Subscriptio') {
+					// 	g_chapterNode.setAttribute('type', 'explicit');
+					// 	g_chapterNode.setAttribute('n', 'B' + g_bookNumber + 'explicit');
+					// } else {
+					// 	g_chapterNode.setAttribute('type', 'chapter');
+					// 	g_chapterNode.setAttribute('n', 'B' + g_bookNumber + 'K' + g_chapterNumber);
+					// }
+					// OSIS setting end
+
 					g_chapterNode = $newDoc.createElement('div');
+
+					// OSIS setting required
 					if (g_chapterNumber === 'Inscriptio') {
 						g_chapterNode.setAttribute('type', 'inscriptio');
 						// g_chapterNode.setAttribute('n', g_bookNumber + '.inscriptio');
@@ -2626,6 +2690,7 @@ function getTeiByHtml(inputString, clientOptions) {
 						g_chapterNode.setAttribute('type', 'chapter');
 						g_chapterNode.setAttribute('n', g_bookNumber + '.' + g_chapterNumber);
 					}
+					// OSIS setting end
 
 					if (g_bookNode)
 						g_bookNode.appendChild(g_chapterNode);
@@ -2642,7 +2707,12 @@ function getTeiByHtml(inputString, clientOptions) {
 				g_bookNumber = $.trim(g_bookNumber);
 				g_bookNode = $newDoc.createElement('div');
 				g_bookNode.setAttribute('type', 'book');
+
+				// OSIS setting required
 				g_bookNode.setAttribute('n', g_bookNumber);
+				// OSIS setting end
+
+
 				if (g_lectionNode)
 					g_lectionNode.appendChild(g_bookNode);
 				else
