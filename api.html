@@ -208,9 +208,9 @@
 <li><p><strong>clientOptions</strong> (<em>clientOptions</em>) – The client settings to use when initialising the editor.</p></li>
 <li><p><strong>clientOptions.language</strong> (<em>string</em>) – The language to use for the interface (en|de). The default is English.</p></li>
 <li><p><strong>clientOptions.rtl</strong> (<em>boolean</em>) – This should be set to true for transcribing right to left languages. The default is false.</p></li>
-<li><p><strong>clientOptions.getWitness</strong> (<em>function|string</em>) – An optional function to get the value of the current witness. If the witnesses is already known when the editor is initialised it can be provided as a string.</p></li>
-<li><p><strong>clientOptions.getWitnessLang</strong> (<em>function|string</em>) – An optional function to get the ISO language code of the current witness. If the language is known when the editor is intialised it can be provided as a string.</p></li>
-<li><p><strong>clientOptions.getBookNameFromBKV</strong> (<em>function</em>) – A function to switch BKV references to OSIS (only used for book and chapter)</p></li>
+<li><p><strong>clientOptions.getWitness</strong> (<em>function</em>) – An optional function to get the value of the current witness.</p></li>
+<li><p><strong>clientOptions.getWitnessLang</strong> (<em>function</em>) – An optional function to get the language of the current witness.</p></li>
+<li><p><strong>clientOptions.getBookNameFromBKV</strong> (<em>function</em>) – A function to switch BKV references to OSIS (only used for book and chapter). This function is provided with two arguments: the B or BK reference depending on the context (i.e. B04, B04K1); the full n attribute value of the first ab following the Book or Chapter.</p></li>
 <li><p><strong>clientOptions.bookNames</strong> (<em>array</em>) – A list of OSIS book abbreviations to use in the select of the V menu. If this list is not supplied the form will have a text box for manual entry.</p></li>
 <li><p><strong>clientOptions.addLineBreaks</strong> (<em>boolean</em>) – Add line breaks in the XML before every pb, cb and lb in the transcription. Default is false.</p></li>
 <li><p><strong>clientOptions.addSpaces</strong> (<em>boolean</em>) – Add spaces into the XML of the transcription between tags to make the text readable if all the tags are removed. Default is false.</p></li>
