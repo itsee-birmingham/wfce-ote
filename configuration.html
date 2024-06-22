@@ -323,6 +323,14 @@ currently only allows a single value to be pre-selected.</p>
 if all the tags are removed in the display. The default is false.</p></li>
 </ul>
 </section>
+<section id="legacy-support">
+<h3>Legacy support<a class="headerlink" href="#legacy-support" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>getBookNameFromBKV</strong> (function) A function to switch BKV references to OSIS (only used for book and chapter).
+This function is provided with two arguments: the B or BK reference depending on the context (i.e. B04, B04K1);
+the full n attribute value of the first ab following the Book or Chapter (i.e. B04K1V1).</p></li>
+</ul>
+</section>
 <section id="examples">
 <h3>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h3>
 <p>These are some examples of initialising the editor with different combinations of settings.</p>
@@ -446,6 +454,7 @@ basetext or a partially made transcription.</p>
 <li><a class="reference internal" href="#general-interface">General interface</a></li>
 <li><a class="reference internal" href="#specific-menu-configurations">Specific menu configurations</a></li>
 <li><a class="reference internal" href="#presentation-of-the-output">Presentation of the output</a></li>
+<li><a class="reference internal" href="#legacy-support">Legacy support</a></li>
 <li><a class="reference internal" href="#examples">Examples</a><ul>
 <li><a class="reference internal" href="#example-1">Example 1</a></li>
 <li><a class="reference internal" href="#example-2">Example 2</a></li>
