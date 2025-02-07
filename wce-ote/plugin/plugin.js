@@ -33,7 +33,7 @@
 */
 
 (function() {
-	var wfce_editor = "3.1.1 (2023-10-09)";
+	var wfce_editor = "3.2.1b (2025-02-07)";
 
 
 	// Load plugin specific language pack
