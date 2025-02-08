@@ -33,7 +33,8 @@
 */
 
 (function() {
-	var wfce_editor = "3.2.0b (2024-01-01)";
+	var wfce_editor = "3.2.1b (2025-02-07)";
+
 
 	// Load plugin specific language pack
 	tinymce.PluginManager.requireLangPack('wce');
@@ -1297,6 +1298,7 @@
 						//when only select CB, PB, QB inhibit input, but can edit
 						WCEUtils.inhibitInput(ed, selectedNode);
 					} else {
+						WCEUtils.inhibitInput(ed, selectedNode);
 						_disableAllControls(ed, true);
 						w.not_C = !wholeSelect;
 					}
@@ -2603,7 +2605,7 @@
 				// :
 				tinyMCE.activeEditor.execCommand('mceAdd_pc', ':');
 				stopEvent(ed, e);
-			} else if (ek == 188 && !e.shiftKey) {
+			} else if (e.key && e.key == ',') {
 				// ,
 				tinyMCE.activeEditor.execCommand('mceAdd_pc', ',');
 				stopEvent(ed, e);
@@ -2893,7 +2895,7 @@
 			// add adaptive selection checkbox if we are the main editor and not an internal one in a dialogue box
 			if (ed.getParam('internal_editor') !== true) {
     			ed.on('postRender', function() {
-    				var ed = $(this)[0];
+    				var ed = this;
     				var id = ed.id + '_adaptive_selection';
     				var statusbar= $(tinymce.activeEditor.iframeElement.parentElement.parentElement).children('.mce-statusbar').children('div');
     				if (statusbar) {
@@ -3684,6 +3686,7 @@
 
 
 			ed.on('init', function() {
+				var ed = this;
 				WCEUtils.initWCEConstants(ed);
 				WCEUtils.initWCEVariable(ed);
 				WCEUtils.setBreakCounterByContent(ed);
@@ -3727,7 +3730,7 @@
 				};
 				var wcevar = ed.WCE_VAR;
 
-				// TODO: check. was undoManager.onAdd.add(function(um, level) {
+				// TODO: check. was undoManager.onAdd.add &openParen;function(um, level) &openCurlyBrace;
 				ed.on('BeforeAddUndo', function(e) {
 					if (ed.WCE_VAR.stopUndo) {
 						var i;
@@ -3757,6 +3760,10 @@
 				ed.on('mouseover', function (evt) {
 					WCEUtils.showWceInfo(ed, evt)
 				});
+
+				if (ed.settings.clientOptions && ed.settings.clientOptions.preferredFont) {
+					$(ed.getBody()).css('font-family', ed.settings.clientOptions.preferredFont);
+				}
 			});
 
 

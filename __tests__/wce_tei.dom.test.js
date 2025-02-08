@@ -294,7 +294,7 @@ const gapAndSupplied = new Map([
       'gap_reason_dummy_inferredPage=inferredPage&amp;gap_reason=unspecified&amp;unit_other=&amp;unit=line&amp;' +
       'extent=1"><span class="format_start mceNonEditable">‹</span><br/>↵[...]' +
       '<span class="format_end mceNonEditable">›</span></span> '+
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;' +
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;' +
       'lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ ' +
       '<span class="format_end mceNonEditable">›</span></span> line '
@@ -360,7 +360,7 @@ const corrections = new Map([
       '<w>simple</w></rdg></app><w>correction</w>',
       'a <span class="corr" wce_orig="smple" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=smple&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=simple%20&amp;place_corr="><span class="format_start mceNonEditable">‹</span>' +
@@ -374,7 +374,7 @@ const corrections = new Map([
       '<w>simple</w></seg></rdg></app><w>correction</w>',
       'a <span class="corr" wce_orig="smple" wce="__t=corr&amp;__n=corrector1&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector1&amp;reading=corr&amp;original_firsthand_reading=smple&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=1&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=deletion_hooks&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=simple%20&amp;place_corr=pageleft">' +
@@ -388,7 +388,7 @@ const corrections = new Map([
       '<w>simple</w></seg></rdg></app><w>correction</w>',
       'a <span class="corr" wce_orig="smple" wce="__t=corr&amp;__n=corrector1&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector1&amp;reading=corr&amp;original_firsthand_reading=smple&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=1&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=deletion_hooks&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=simple%20&amp;place_corr=above">' +
@@ -402,7 +402,7 @@ const corrections = new Map([
       '<seg type="other" subtype="inline" n="@PCL-undefined"><w>simple</w></seg></rdg></app><w>correction</w>',
       'a <span class="corr" wce_orig="smple" wce="__t=corr&amp;__n=corrector1&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector1&amp;reading=corr&amp;original_firsthand_reading=smple&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=1&amp;deletion_other=0&amp;deletion=transposition_marks&amp;' +
       'firsthand_partial=&amp;partial=&amp;corrector_text=simple%20&amp;place_corr=other&amp;' +
@@ -416,7 +416,7 @@ const corrections = new Map([
       'a <span class="corr" wce_orig="deletion" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=deletion&amp;' +
       'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;' +
-      'deletion_underdot=0&amp;deletion_strikethrough=1&amp;deletion_vertical_line=0&amp;' +
+      'deletion_underdot=0&amp;deletion_overdot=0&amp;deletion_strikethrough=1&amp;deletion_vertical_line=0&amp;' +
       'deletion_deletion_hooks=0&amp;deletion_transposition_marks=0&amp;deletion_other=0&amp;' +
       'deletion=strikethrough&amp;firsthand_partial=&amp;partial=&amp;corrector_text=&amp;blank_correction=on&amp;' +
       'place_corr="><span class="format_start mceNonEditable">‹</span>deletion' +
@@ -428,7 +428,7 @@ const corrections = new Map([
       '<w>addition</w></rdg></app><w>correction</w>',
       'an <span class="corr_blank_firsthand" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=&amp;blank_firsthand=on&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=addition%20&amp;place_corr="><span class="format_start mceNonEditable">‹</span>T' +
@@ -442,14 +442,14 @@ const corrections = new Map([
       '<rdg type="corr" hand="corrector"><w>correction</w></rdg></app>',
       '<span class="corr" wce_orig="consecutive" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=consecutive&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=1&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=1&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=underline&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=&amp;blank_correction=on&amp;place_corr=">' +
       '<span class="format_start mceNonEditable">‹</span>consecutive<span class="format_end mceNonEditable">›</span>' +
       '</span> <span class="corr" wce_orig="corrections" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=corrections&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=correction%20&amp;place_corr="><span class="format_start mceNonEditable">‹</span>' +
@@ -461,7 +461,7 @@ const corrections = new Map([
       '<rdg type="corr" hand="corrector"><w>simple</w></rdg></app><w>correction</w>',
       'a <span class="corr" wce_orig="smple" wce="__t=corr&amp;__n=corrector&amp;ut_videtur_firsthand=on&amp;' +
       'corrector_name_other=&amp;corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=smple&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=simple%20&amp;place_corr="><span class="format_start mceNonEditable">‹</span>' +
@@ -473,7 +473,7 @@ const corrections = new Map([
       '<w>simple</w></rdg></app><w>correction</w>',
       'a <span class="corr" wce_orig="smple" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector&amp;ut_videtur_corr=on&amp;reading=corr&amp;original_firsthand_reading=smple&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=simple%20&amp;place_corr="><span class="format_start mceNonEditable">‹</span>' +
@@ -485,7 +485,7 @@ const corrections = new Map([
       '<rdg type="alt" hand="corrector" rend="other"><w>basic</w></rdg></app><w>correction</w>',
       'a <span class="corr" wce_orig="simple" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
       'corrector_name=corrector&amp;reading=alt&amp;original_firsthand_reading=simple&amp;' +
-      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+      'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
       'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
       'deletion_transposition_marks=0&amp;deletion_other=1&amp;deletion=other&amp;firsthand_partial=&amp;' +
       'partial=&amp;corrector_text=basic%20&amp;place_corr="><span class="format_start mceNonEditable">‹</span>' +
@@ -532,7 +532,7 @@ const notes = new Map([
       'paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[' +
       '<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=1">comm</span>]' +
       '<span class="format_end mceNonEditable">›</span></span>' +
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;' +
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;' +
       'lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> in here '
@@ -683,7 +683,7 @@ const specialCommentary = new Map([
       'paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[' +
       '<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=1">comm</span>]' +
       '<span class="format_end mceNonEditable">›</span></span>' +
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;' +
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;' +
       'lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> in here '
@@ -691,23 +691,23 @@ const specialCommentary = new Map([
   ],
   [ 'multiple lines of commentary text note (replace multiline)',
     [ '<w>some</w><w>commentary</w><lb/><note type="commentary">One line of untranscribed commentary text</note><lb/><note type="commentary">One line of untranscribed commentary text</note><lb/><note type="commentary">One line of untranscribed commentary text</note><lb n="PCL-undefined"/><w>in</w><w>here</w>',
-      'some commentary <span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=3&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=3">3 lines comm</span>]<span class="format_end mceNonEditable">›</span></span><span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in here '
+      'some commentary <span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=3&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=3">3 lines comm</span>]<span class="format_end mceNonEditable">›</span></span>​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in here '
     ]
   ],
   // the next three tests all trigger the code in the TEI2HTML_note function but the HTML2TEI_paratext function
   [ 'commentary in middle of line (replace multiline)',
     [ '<lb n="PCL-undefined"/><w>in</w><w>line</w><w>commentary</w><note type="commentary">Untranscribed commentary text within the line</note><w>here</w><lb n="PCL-undefined"/>',
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line commentary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span> here <span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line commentary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span> here ​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
     ]
   ],
   [ 'commentary at end of line (replace multiline)',
     [ '<lb n="PCL-undefined"/><w>in</w><w>line</w><w>commentary</w><note type="commentary">Untranscribed commentary text within the line</note><lb n="PCL-undefined"/>',
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line commentary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span><span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line commentary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span>​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
     ]
   ],
   [ 'commentary at start of line (replace multiline)',
     [ '<lb n="PCL-undefined"/><note type="commentary">Untranscribed commentary text within the line</note><w>in</w><w>line</w><w>commentary</w><lb n="PCL-undefined"/>',
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span><span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span> in line commentary <span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span><span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span> in line commentary ​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
     ]
   ],
   [ 'commentary in line (replace multiline)',
@@ -725,28 +725,28 @@ const specialLectionary = new Map([
   // lectionary
   [ '1 line of lectionary text note (replace multiline)',
     [ '<w>some</w><w>lectionary</w><lb/><note type="lectionary-other">One line of untranscribed lectionary text</note><lb n="PCL-undefined"/><w>in</w><w>here</w>',
-      'some lectionary <span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=1&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=1">lect</span>]<span class="format_end mceNonEditable">›</span></span><span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in here '
+      'some lectionary <span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=1&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=1">lect</span>]<span class="format_end mceNonEditable">›</span></span>​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in here '
     ]
   ],
   [ 'multiple lines of lectionary text note (replace multiline)',
     [ '<w>some</w><w>lectionary</w><lb/><note type="lectionary-other">One line of untranscribed lectionary text</note><lb/><note type="lectionary-other">One line of untranscribed lectionary text</note><lb/><note type="lectionary-other">One line of untranscribed lectionary text</note><lb n="PCL-undefined"/><w>in</w><w>here</w>',
-      'some lectionary <span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=3&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=3">3 lines lect</span>]<span class="format_end mceNonEditable">›</span></span><span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in here '
+      'some lectionary <span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=3&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span><br/>↵[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=3">3 lines lect</span>]<span class="format_end mceNonEditable">›</span></span>​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in here '
     ]
   ],
   // the next three tests all trigger the code in the TEI2HTML_note function but the HTML2TEI_paratext function
   [ 'lectionary in middle of line (replace multiline)',
     [ '<lb n="PCL-undefined"/><w>in</w><w>line</w><w>lectionary</w><note type="lectionary-other">Untranscribed lectionary text within the line</note><w>here</w><lb n="PCL-undefined"/>',
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line lectionary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0">lect</span>]<span class="format_end mceNonEditable">›</span></span> here <span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line lectionary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0">lect</span>]<span class="format_end mceNonEditable">›</span></span> here ​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
     ]
   ],
   [ 'lectionary at end of line (replace multiline)',
     [ '<lb n="PCL-undefined"/><w>in</w><w>line</w><w>commentary</w><note type="commentary">Untranscribed commentary text within the line</note><lb n="PCL-undefined"/>',
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line commentary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span><span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span> in line commentary<span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="commentary" wce="__t=paratext&amp;__n=&amp;fw_type=commentary&amp;covered=0">comm</span>]<span class="format_end mceNonEditable">›</span></span>​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
     ]
   ],
   [ 'lectionary at start of line (replace multiline)',
     [ '<lb n="PCL-undefined"/><note type="lectionary-other">Untranscribed lectionary text within the line</note><w>in</w><w>line</w><w>lectionary</w><lb n="PCL-undefined"/>',
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span><span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0">lect</span>]<span class="format_end mceNonEditable">›</span></span> in line lectionary <span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span><span class="paratext" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0&amp;text=&amp;number=&amp;edit_number=on&amp;paratext_position=pagetop&amp;paratext_position_other=&amp;paratext_alignment=left"><span class="format_start mceNonEditable">‹</span>[<span class="lectionary-other" wce="__t=paratext&amp;__n=&amp;fw_type=lectionary-other&amp;covered=0">lect</span>]<span class="format_end mceNonEditable">›</span></span> in line lectionary ​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no"><span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
     ]
   ],
   [ 'lectionary in line (replace multiline)',
@@ -867,13 +867,13 @@ const manuscriptPageStructure = new Map([
   [ 'initial page, using type=folio',
     [ '<pb n="1r" type="folio" xml:id="P1r-undefined"/><cb n="P1rC1-undefined"/>' +
       '<lb n="P1rC1L-undefined"/><w>my</w><w>first</w><w>page</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=r&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1r<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> my first page '
@@ -882,13 +882,13 @@ const manuscriptPageStructure = new Map([
   [ 'initial page, using type=folio, with facsimile',
     [ '<pb n="1r" type="folio" facs="http://thelibrary/image7.jpg" xml:id="P1r-undefined"/><cb n="P1rC1-undefined"/>' +
       '<lb n="P1rC1L-undefined"/><w>my</w><w>first</w><w>page</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=r&amp;fibre_type=&amp;facs=http://thelibrary/image7.jpg&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1r<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> my first page '
@@ -897,13 +897,13 @@ const manuscriptPageStructure = new Map([
   [ 'mid-text page, using type=page',
     [ '<w>end</w><w>of</w><w>page</w><pb n="1" type="page" xml:id="P1-undefined"/><cb n="P1C1-undefined"/>' +
       '<lb n="P1C1L-undefined"/><w>my</w><w>second</w><w>page</w>',
-      'end of page <span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      'end of page ​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=pb&amp;number=1&amp;rv=&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> my second page '
@@ -912,13 +912,13 @@ const manuscriptPageStructure = new Map([
   [ 'mid-word page, for papyri (type=page and y)',
     [ '<w>half</w><w>of</w><w>wo<pb n="1↓" type="page" xml:id="P1y-undefined" break="no"/><cb n="P1yC1-undefined"/>' +
       '<lb n="P1yC1L-undefined"/>rd</w><w>on</w><w>second</w><w>page</w>',
-      'half of wo<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      'half of wo​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=pb&amp;number=1&amp;rv=&amp;fibre_type=y&amp;facs=&amp;lb_alignment=&amp;hasBreak=yes">' +
       '<span class="format_start mceNonEditable">‹</span>-<br/>PB 1y<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span>rd on second page '
@@ -928,19 +928,19 @@ const manuscriptPageStructure = new Map([
     [ '<pb n="1v" type="folio" xml:id="P1v-undefined"/><cb n="P1vC1-undefined"/><lb n="P1vC1L-undefined"/>' +
       '<w>my</w><w>first</w><w>column</w><cb n="P1vC2-undefined"/><lb n="P1vC2L-undefined"/>' +
       '<w>my</w><w>second</w><w>column</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=v&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1v<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> my first column <span class="brea" id="cb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span> my first column ​<span class="brea" id="cb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=2&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 2<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> my second column '
@@ -950,19 +950,19 @@ const manuscriptPageStructure = new Map([
     [ '<pb n="1v" type="folio" xml:id="P1v-undefined"/><cb n="P1vC1-undefined"/><lb n="P1vC1L-undefined"/>' +
       '<w>my</w><w>first</w><w>colu<cb n="P1vC2-undefined" break="no"/><lb n="P1vC2L-undefined"/>mn</w>' +
       '<w>my</w><w>second</w><w>column</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=v&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1v<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> my first colu<span class="brea" id="cb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span> my first colu​<span class="brea" id="cb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=2&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=yes">' +
       '<span class="format_start mceNonEditable">‹</span>-<br/>CB 2<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_2_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span>mn my second column '
@@ -971,16 +971,16 @@ const manuscriptPageStructure = new Map([
   [ 'between-word linebreak',
     [ '<pb n="1" type="page" xml:id="P1-undefined"/><cb n="P1C1-undefined"/><lb n="P1C1L-undefined"/>' +
       '<w>my</w><w>first</w><w>line</w><lb n="P1C1L-undefined"/><w>my</w><w>second</w><w>line</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> my first line <span class="brea" wce="__t=brea&amp;__n=&amp;' +
+      '</span> my first line ​<span class="brea" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> my second line '
@@ -989,16 +989,16 @@ const manuscriptPageStructure = new Map([
   [ 'between-word linebreak, hanging line',
     [ '<pb n="1" type="page" xml:id="P1-undefined"/><cb n="P1C1-undefined"/><lb n="P1C1L-undefined"/>' +
       '<w>my</w><w>first</w><w>line</w><lb n="P1C1L-undefined" rend="hang"/><w>my</w><w>second</w><w>line</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> my first line <span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
+      '</span> my first line ​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
       'number=&amp;lb_alignment=hang&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵← <span class="format_end mceNonEditable">›</span>' +
       '</span> my second line '
@@ -1007,16 +1007,16 @@ const manuscriptPageStructure = new Map([
   [ 'between-word linebreak, indented line',
     [ '<pb n="1" type="page" xml:id="P1-undefined"/><cb n="P1C1-undefined"/><lb n="P1C1L-undefined"/>' +
       '<w>my</w><w>first</w><w>line</w><lb n="P1C1L-undefined" rend="indent"/><w>my</w><w>second</w><w>line</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> my first line <span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
+      '</span> my first line ​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
       'number=&amp;lb_alignment=indent&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵→ <span class="format_end mceNonEditable">›</span>' +
       '</span> my second line '
@@ -1025,16 +1025,16 @@ const manuscriptPageStructure = new Map([
   [ 'mid-word linebreak',
     [ '<pb n="1v" type="folio" xml:id="P1v-undefined"/><cb n="P1vC1-undefined"/><lb n="P1vC1L-undefined"/><w>my</w><w>first</w><w>li' +
       '<lb n="P1vC1L-undefined" break="no"/>ne</w><w>my</w><w>second</w><w>line</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=v&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1v<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> my first li<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
+      '</span> my first li​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
       'number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=yes">' +
       '<span class="format_start mceNonEditable">‹</span>-<br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span>ne my second line '
@@ -1043,16 +1043,16 @@ const manuscriptPageStructure = new Map([
   [ 'mid-word linebreak with rend attribute',
     [ '<pb n="1v" type="folio" xml:id="P1v-undefined"/><cb n="P1vC1-undefined"/><lb n="P1vC1L-undefined"/><w>my</w><w>first</w><w>li' +
       '<lb n="P1vC1L-undefined" rend="hang" break="no"/>ne</w><w>my</w><w>second</w><w>line</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=pb&amp;' +
       'number=1&amp;rv=v&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1v<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> my first li<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
+      '</span> my first li​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
       'number=&amp;lb_alignment=hang&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=yes">' +
       '<span class="format_start mceNonEditable">‹</span>-<br/>↵← <span class="format_end mceNonEditable">›</span>' +
       '</span>ne my second line '
@@ -1060,16 +1060,16 @@ const manuscriptPageStructure = new Map([
   ],
   [ 'quire break',
     [ '<gb n="3"/><pb n="1r" type="folio" xml:id="P1r-undefined"/><cb n="P1rC1-undefined"/><lb n="P1rC1L-undefined"/>',
-      '<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=gb&amp;number=3&amp;' +
+      '​<span class="brea" wce="__t=brea&amp;__n=&amp;break_type=gb&amp;number=3&amp;' +
 			'lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
 			'<span class="format_start mceNonEditable">‹</span><br/>QB<span class="format_end mceNonEditable">›</span>' +
-			'</span><span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+			'</span>​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
 			'break_type=pb&amp;number=1&amp;rv=r&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
 			'<span class="format_start mceNonEditable">‹</span><br/>PB 1r<span class="format_end mceNonEditable">›</span>' +
-			'</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+			'</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
 			'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
 			'<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-			'</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+			'</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
 			'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
 			'<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span></span>'
     ]
@@ -1102,7 +1102,7 @@ const teiToHtmlAndBackWithChange = new Map([
         'a <span class="corr" wce_orig="deletion" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
         'corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=deletion&amp;' +
         'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=1&amp;' +
-        'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
+        'deletion_overdot=0&amp;deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
         'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=underdot&amp;firsthand_partial=&amp;' +
         'partial=&amp;corrector_text=&amp;blank_correction=on&amp;place_corr=">' +
         '<span class="format_start mceNonEditable">‹</span>deletion<span class="format_end mceNonEditable">›</span>' +
@@ -1116,7 +1116,7 @@ const teiToHtmlAndBackWithChange = new Map([
         '<w>addition</w></rdg></app><w>correction</w>',
         'an <span class="corr_blank_firsthand" wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;' +
         'corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=&amp;blank_firsthand=on&amp;' +
-        'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;' +
+        'common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;' +
         'deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0&amp;' +
         'deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null&amp;firsthand_partial=&amp;' +
         'partial=&amp;corrector_text=addition%20&amp;place_corr="><span class="format_start mceNonEditable">‹</span>T' +
@@ -1319,7 +1319,7 @@ const exportSpaces = new Map([
      'test spaces <span class="corr" wce_orig="arround" wce="__t=corr&amp;__n=corrector' +
      '&amp;corrector_name_other=&amp;corrector_name=corrector&amp;reading=corr&amp;' +
      'original_firsthand_reading=arround&amp;common_firsthand_partial=&amp;deletion_erased=0&amp;' +
-     'deletion_underline=0&amp;deletion_underdot=0&amp;deletion_strikethrough=0&amp;deletion_vertical_line=0' +
+     'deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;deletion_strikethrough=0&amp;deletion_vertical_line=0' +
      '&amp;deletion_deletion_hooks=0&amp;deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null' +
      '&amp;firsthand_partial=&amp;partial=&amp;corrector_text=around%20&amp;place_corr=">' +
      '<span class="format_start mceNonEditable">‹</span>arround<span class="format_end mceNonEditable">›</span>' +
@@ -1335,7 +1335,7 @@ const exportSpaces = new Map([
      '<span class="format_end mceNonEditable">›</span></span> <span class="corr" wce_orig="arround" ' +
      'wce="__t=corr&amp;__n=corrector&amp;corrector_name_other=&amp;corrector_name=corrector&amp;reading=corr' +
      '&amp;original_firsthand_reading=arround&amp;common_firsthand_partial=&amp;deletion_erased=0&amp;' +
-     'deletion_underline=0&amp;deletion_underdot=0&amp;deletion_strikethrough=0&amp;deletion_vertical_line=0' +
+     'deletion_underline=0&amp;deletion_underdot=0&amp;deletion_overdot=0&amp;deletion_strikethrough=0&amp;deletion_vertical_line=0' +
      '&amp;deletion_deletion_hooks=0&amp;deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null' +
      '&amp;firsthand_partial=&amp;partial=&amp;corrector_text=around%20&amp;place_corr=">' +
      '<span class="format_start mceNonEditable">‹</span>arround<span class="format_end mceNonEditable">›</span>' +
@@ -1360,7 +1360,7 @@ const exportSpaces = new Map([
      '</span></span> <span class="corr" wce_orig="before%20app" wce="__t=corr&amp;__n=corrector&amp;' +
      'corrector_name_other=&amp;corrector_name=corrector&amp;reading=corr&amp;original_firsthand_reading=' +
      'before%20app&amp;common_firsthand_partial=&amp;deletion_erased=0&amp;deletion_underline=0&amp;' +
-     'deletion_underdot=0&amp;deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0' +
+     'deletion_underdot=0&amp;deletion_overdot=0&amp;deletion_strikethrough=0&amp;deletion_vertical_line=0&amp;deletion_deletion_hooks=0' +
      '&amp;deletion_transposition_marks=0&amp;deletion_other=0&amp;deletion=null&amp;firsthand_partial=&amp;partial=' +
      '&amp;corrector_text=&amp;blank_correction=on&amp;place_corr="><span class="format_start mceNonEditable">‹' +
      '</span>before app<span class="format_end mceNonEditable">›</span></span>',
@@ -1442,16 +1442,16 @@ const exportLayout = new Map([
   [ 'test input without linebreaks in XML get them added on export',
     ['<pb n="1r" type="folio" xml:id="P1r-"/><cb n="P1rC1-"/><lb n="P1rC1L-"/><w>test</w><w>that</w><w>line</w>' +
      '<w>breaks</w><lb n="P1rC1L-"/><w>are</w><w>added</w><w>in</w><w>XML</w>',
-     '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+     '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
      'break_type=pb&amp;number=1&amp;rv=r&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
      '<span class="format_start mceNonEditable">‹</span><br/>PB 1r<span class="format_end mceNonEditable">›</span>' +
-     '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+     '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
      'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
      '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-     '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
+     '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
      'number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
      '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-     '</span> test that line breaks <span class="brea" wce="__t=brea&amp;__n=&amp;' +
+     '</span> test that line breaks ​<span class="brea" wce="__t=brea&amp;__n=&amp;' +
      'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
      '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
      '</span> are added in XML ',
@@ -1462,16 +1462,16 @@ const exportLayout = new Map([
   [ 'test input with linebreaks in XML still has them on export',
     ['\n<pb n="1r" type="folio" xml:id="P1r-"/>\n<cb n="P1rC1-"/>\n<lb n="P1rC1L-"/><w>test</w><w>that</w><w>line</w>' +
       '<w>breaks</w>\n<lb n="P1rC1L-"/><w>are</w><w>added</w><w>in</w><w>XML</w>',
-      '<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '​<span class="brea" id="pb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=pb&amp;number=1&amp;rv=r&amp;fibre_type=&amp;facs=&amp;lb_alignment=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>PB 1r<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
+      '</span>​<span class="brea" id="cb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;' +
       'break_type=cb&amp;number=1&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>CB 1<span class="format_end mceNonEditable">›</span>' +
-      '</span><span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
+      '</span>​<span class="brea" id="lb_3_MATH.RAND" wce="__t=brea&amp;__n=&amp;break_type=lb&amp;' +
       'number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
-      '</span> test that line breaks <span class="brea" wce="__t=brea&amp;__n=&amp;' +
+      '</span> test that line breaks ​<span class="brea" wce="__t=brea&amp;__n=&amp;' +
       'break_type=lb&amp;number=&amp;lb_alignment=&amp;rv=&amp;fibre_type=&amp;facs=&amp;hasBreak=no">' +
       '<span class="format_start mceNonEditable">‹</span><br/>↵ <span class="format_end mceNonEditable">›</span>' +
       '</span> are added in XML ',
