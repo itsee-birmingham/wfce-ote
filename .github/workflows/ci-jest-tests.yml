@@ -2,9 +2,9 @@ name: ci-jest-tests
 
 on:
   pull_request:
-    branches: [*]
+    branches: '*'
   push:
-    branches: [*]
+    branches: '*'
 
 jobs:
   test:
