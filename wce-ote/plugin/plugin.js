@@ -1814,9 +1814,6 @@
 					type_name = ar['__t'];
 					type_name = type_name.split('_');
 					switchvar = type_name[0];
-					console.log('=================')
-					console.log(switchvar)
-
 					/*
 					// We test if there is a correction on top of another structure. If so, we have to use the correction for the mouse over. i=0 is the original meaning, i>1 consists of all corrections
 					*/
@@ -1885,7 +1882,6 @@
 							}
 							break;
 						case 'brea':
-							console.log(ar['break_type'])
 							switch (ar['break_type']) {
 								case 'lb':
 									if (ar['number']) {
