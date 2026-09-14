@@ -1814,6 +1814,7 @@
 					type_name = ar['__t'];
 					type_name = type_name.split('_');
 					switchvar = type_name[0];
+
 					/*
 					// We test if there is a correction on top of another structure. If so, we have to use the correction for the mouse over. i=0 is the original meaning, i>1 consists of all corrections
 					*/
